@@ -16,7 +16,8 @@
 //       '##  '
 //       '### '
 //       '####'
-function steps(n) {
+//  Pyramid Solution
+ function steps(n) {
   for (i=0;i<n;i++){
     step = '';
     for (j=0;j<n;j++){
@@ -29,6 +30,22 @@ function steps(n) {
     console.log(step);
   }
 }
+// recursion solution, this is build based on the same concept as the pyramid solution using recursion
+// function steps(n, row = 0, stair = '') {
+//   if (n === row){
+//     return;
+//   }
+//   if (n === stair.length){
+//     console.log(stair);
+//     return steps(n, row + 1)
+//   }
+//   if (stair.length <= row){
+//     stair += '#';
+//   }else{
+//     stair += ' ';
+//   }
+//   steps(n,row,stair);
+// }
 
 module.exports = steps;
 // solusi hamid
