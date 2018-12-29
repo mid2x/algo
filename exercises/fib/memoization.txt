@@ -1,0 +1,3 @@
+Store the argument of each function call along with the result.
+if the function is called again with the same arguments, return the precomputed result, rather than running the function again
+this is one thing which can be classified as caching, but this are used in programming to use memory rather than consuming lots of resource
