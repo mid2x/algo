@@ -11,6 +11,20 @@
 // 4       5
 // Answer: [1, 3, 2]
 
-function levelWidth(root) {}
+function levelWidth(root) {
+  const arr = [root, 's'];
+  const level = [0];
+  while (arr.length > 1){
+    const node = arr.shift();
+    if (node === 's'){
+      level.push(0);;
+      arr.push('s');
+    }else{
+      arr.push(...node.children);
+      level[level.length-1]++;
+    }
+  }
+  return level;
+}
 
 module.exports = levelWidth;
