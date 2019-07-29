@@ -55,7 +55,7 @@ function cleanString(str){
 // function charMaps(str){
 //   const cr ={};
 //   for (let char of str){
-//     cr[char] = cr[char] + 1 || 1;
+//     cr[char] = cr[char] + 1 || 1; //why
 //   }
 //   return cr;
 // }
